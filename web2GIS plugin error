@@ -1,0 +1,24 @@
+qgis2web produced an error:
+
+2018-05-16T16:49:19 WARNING Traceback (most recent call last):
+              File "C:/Users/Tom/AppData/Roaming/QGIS/QGIS3\profiles\default/python/plugins\qgis2web\maindialog.py",
+line 314, in previewMap
+                preview_file = self.createPreview()
+              File "C:/Users/Tom/AppData/Roaming/QGIS/QGIS3\profiles\default/python/plugins\qgis2web\maindialog.py",
+line 277, in createPreview
+                dest_folder=utils.tempFolder()).index_file
+              File "C:/Users/Tom/AppData/Roaming/QGIS/QGIS3\profiles\default/python/plugins\qgis2web\olwriter.py",
+line 90, in write
+                folder=dest_folder)
+              File "C:/Users/Tom/AppData/Roaming/QGIS/QGIS3\profiles\default/python/plugins\qgis2web\olwriter.py",
+line 129, in writeOL
+                popup, json, restrictToExtent, extent, feedback, matchCRS)
+              File "C:/Users/Tom/AppData/Roaming/QGIS/QGIS3\profiles\default/python/plugins\qgis2web\utils.py",
+line 182, in exportLayers
+                iface, extent, precision, crs, optimize)
+              File "C:/Users/Tom/AppData/Roaming/QGIS/QGIS3\profiles\default/python/plugins\qgis2web\utils.py",
+line 195, in exportVector
+                cleanLayer = writeTmpLayer(layer, restrictToExtent, iface, extent)
+              File "C:/Users/Tom/AppData/Roaming/QGIS/QGIS3\profiles\default/python/plugins\qgis2web\utils.py",
+line 124, in writeTmpLayer
+                uri = TYPE_MAP[layer.wkbType()]             KeyError: 2005
